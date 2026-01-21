@@ -17,15 +17,10 @@ Including another URLconf
 # config/urls.py
 
 from django.contrib import admin
-from django.urls import path
-from books import views
+from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-
-    
-    path('books/hello/', views.hello_view, name='hello'),
-    path('books/info/', views.info_view, name='info'),
-    path('books/greet/', views.greet_user, name='greet_user'),
+    path('api/', include('books.urls')),
 ]
 

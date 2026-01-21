@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Book Management</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <h1>Book Management System</h1>
+
+  <h2>Add Book</h2>
+  <form id="bookForm">
+    <input type="text" id="book_name" placeholder="Book Name" required />
+    <input type="text" id="author_name" placeholder="Author Name" required />
+    <input type="number" id="release_year" placeholder="Release Year" required />
+    <button type="submit">Add Book</button>
+  </form>
+
+  <h2>Book List</h2>
+  <ul id="bookList"></ul>
+
+  <script src="script.js"></script>
+</body>
+</html>
